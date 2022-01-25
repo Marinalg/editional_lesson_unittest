@@ -4,7 +4,7 @@ import os
 from logger import log
 
 
-class HomeworkWork9Test(unittest .TestCase):
+class HomeworkWork9Test(unittest .TestCase): #unittest.TestCase - space
     def test_mult(self):
         a = 5
         b = 1
@@ -15,10 +15,10 @@ class HomeworkWork9Test(unittest .TestCase):
 
     @unittest.skip('its skip test')
     def test_mult_v2(self):
-        from homework_9.1 import math as ar2
+        from homework_9.1 import math as ar2 # used error
         a =7
         exp = 14
-        out = ar2(a * math.sqrt(2))
+        out = ar2(a * math.sqrt(2)) # ar2.sqrt(2) expected
         self.test_mult(out,exp)
 
     @unittest.skipIf( os.name == "posix", "Mac: Catalina is not support")
