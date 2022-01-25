@@ -3,7 +3,7 @@ def arithmetic(a,b, oper):
         return a * b
     elif oper == "/":
         return a / b
-    elif  oper == "+":
+    elif oper == "+":
         return a+b
     elif oper == "-":
         return a - b
